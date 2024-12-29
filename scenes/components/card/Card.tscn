@@ -1,0 +1,290 @@
+[gd_scene load_steps=30 format=3 uid="uid://cklkf0ein2n86"]
+
+[ext_resource type="Texture2D" uid="uid://dwyot1m4xui13" path="res://assets/images/cards/layout/card_back.png" id="1_aiw7j"]
+[ext_resource type="FontFile" uid="uid://c1cwm55bx60tp" path="res://assets/fonts/SoukouMincho.ttf" id="1_ll60y"]
+[ext_resource type="Script" path="res://scenes/components/card/Card.cs" id="1_myyt2"]
+[ext_resource type="Texture2D" uid="uid://c1g48atu1kms1" path="res://assets/images/cards/layout/base_frame.png" id="1_oo6bt"]
+[ext_resource type="Texture2D" uid="uid://bro0bjeh5aikp" path="res://assets/images/cards/artworks/tomodachi.png" id="1_ynfjg"]
+[ext_resource type="ArrayMesh" uid="uid://id5q3cfqx77b" path="res://assets/meshes/card.obj" id="2_gcujv"]
+[ext_resource type="Shader" uid="uid://c6g0y30y5tah0" path="res://assets/shaders/aura.tres" id="2_mbo41"]
+[ext_resource type="Material" uid="uid://cn1tki18ym0jj" path="res://assets/materials/gold_holo.tres" id="5_hrcsv"]
+[ext_resource type="Texture2D" uid="uid://ds8aek1dg756i" path="res://assets/images/cards/artworks/empty.png" id="5_yb6ka"]
+[ext_resource type="Texture2D" uid="uid://cb4l6hqgud8qr" path="res://assets/images/cards/layout/attack_stat_box.png" id="6_jsygx"]
+[ext_resource type="Texture2D" uid="uid://dy7lqoety1klb" path="res://assets/images/cards/layout/defense_stat_box.png" id="6_txyw7"]
+[ext_resource type="Texture2D" uid="uid://5h785b4p5w0w" path="res://assets/textures/gold_holo_gradient.tres" id="10_y01ws"]
+[ext_resource type="Texture2D" uid="uid://ci7oy6f4h2a3" path="res://assets/textures/T_trail12.png" id="16_a2bq7"]
+
+[sub_resource type="Animation" id="Animation_yovmn"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Mesh:material_overlay:shader_parameter/AuraIntensity")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_nem7j"]
+resource_name = "flip_y"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 3.14159, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_5xbv6"]
+resource_name = "aura"
+length = 0.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Mesh:material_overlay:shader_parameter/AuraIntensity")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.233333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 2.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_vxgoh"]
+_data = {
+"RESET": SubResource("Animation_yovmn"),
+"aura": SubResource("Animation_5xbv6"),
+"flip_y": SubResource("Animation_nem7j")
+}
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dhc10"]
+size = Vector3(10.24, 17.92, 0.05)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hjhyl"]
+resource_local_to_scene = true
+render_priority = 2
+shader = ExtResource("2_mbo41")
+shader_parameter/AuraColor = Color(0.803922, 0.588235, 0.14902, 1)
+shader_parameter/AuraIntensity = 0.0
+shader_parameter/Speed = Vector2(-0.2, 0)
+shader_parameter/Scale = Vector2(1, 0.2)
+
+[sub_resource type="FontVariation" id="FontVariation_c5fmb"]
+base_font = ExtResource("1_ll60y")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rg03m"]
+render_priority = 1
+transparency = 1
+blend_mode = 1
+albedo_color = Color(0.8, 0.6, 0.2, 1)
+albedo_texture = ExtResource("10_y01ws")
+albedo_texture_force_srgb = true
+metallic = 1.0
+metallic_texture = ExtResource("10_y01ws")
+roughness = 0.1
+emission = Color(0.8, 0.6, 0.2, 1)
+emission_operator = 1
+emission_texture = ExtResource("10_y01ws")
+normal_enabled = true
+normal_texture = ExtResource("10_y01ws")
+anisotropy_enabled = true
+anisotropy = 1.0
+
+[sub_resource type="TextMesh" id="TextMesh_72omw"]
+resource_local_to_scene = true
+material = SubResource("StandardMaterial3D_rg03m")
+text = "ともだち"
+font = SubResource("FontVariation_c5fmb")
+font_size = 127
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xnq88"]
+render_priority = 1
+blend_mode = 1
+shading_mode = 0
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("16_a2bq7")
+use_particle_trails = true
+
+[sub_resource type="Curve" id="Curve_sh73x"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="Curve" id="Curve_6qtm6"]
+min_value = -2.0
+max_value = 2.0
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="Curve" id="Curve_olx0j"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveXYZTexture" id="CurveXYZTexture_mnub0"]
+curve_x = SubResource("Curve_sh73x")
+curve_y = SubResource("Curve_6qtm6")
+curve_z = SubResource("Curve_olx0j")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_6mbnh"]
+emission_shape_offset = Vector3(0, -8.96, 0)
+emission_shape = 6
+emission_ring_axis = Vector3(0, 1, 0)
+emission_ring_height = 0.0
+emission_ring_radius = 8.0
+emission_ring_inner_radius = 5.0
+direction = Vector3(0, 1, 0)
+spread = 0.0
+initial_velocity_min = 15.0
+initial_velocity_max = 21.0
+orbit_velocity_min = 1.0
+orbit_velocity_max = 1.0
+orbit_velocity_curve = SubResource("CurveXYZTexture_mnub0")
+gravity = Vector3(0, 0, 0)
+color = Color(5, 1.2, 0.4, 1)
+
+[sub_resource type="RibbonTrailMesh" id="RibbonTrailMesh_md7le"]
+size = 10.0
+
+[node name="Card" type="StaticBody3D"]
+script = ExtResource("1_myyt2")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_vxgoh")
+}
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_dhc10")
+
+[node name="Mesh" type="MeshInstance3D" parent="."]
+material_overlay = SubResource("ShaderMaterial_hjhyl")
+mesh = ExtResource("2_gcujv")
+
+[node name="Back" type="Sprite3D" parent="Mesh"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, -0.026)
+shaded = true
+double_sided = false
+texture = ExtResource("1_aiw7j")
+
+[node name="Artwork" type="Sprite3D" parent="Mesh"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.52, 0.026)
+sorting_offset = 10.0
+double_sided = false
+texture = ExtResource("5_yb6ka")
+
+[node name="AttackStatBox" type="Sprite3D" parent="Mesh/Artwork"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.94, 4.56, 0.001)
+sorting_offset = 20.0
+shaded = true
+double_sided = false
+texture = ExtResource("6_jsygx")
+
+[node name="Label" type="Label3D" parent="Mesh/Artwork/AttackStatBox"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.001)
+sorting_offset = 30.0
+shaded = true
+double_sided = false
+outline_render_priority = 0
+modulate = Color(0.0235294, 0.0313726, 0.0588235, 1)
+outline_modulate = Color(0.0235294, 0.0313726, 0.0588235, 1)
+text = "攻
+撃"
+font = ExtResource("1_ll60y")
+font_size = 140
+outline_size = 4
+autowrap_mode = 1
+
+[node name="DefenseStatBox" type="Sprite3D" parent="Mesh/Artwork"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.94, 4.56, 0.001)
+sorting_offset = 20.0
+shaded = true
+double_sided = false
+texture = ExtResource("6_txyw7")
+
+[node name="Label" type="Label3D" parent="Mesh/Artwork/DefenseStatBox"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.001)
+sorting_offset = 30.0
+shaded = true
+double_sided = false
+outline_render_priority = 0
+modulate = Color(0.0235294, 0.0313726, 0.0588235, 1)
+outline_modulate = Color(0.0235294, 0.0313726, 0.0588235, 1)
+text = "防
+御"
+font = ExtResource("1_ll60y")
+font_size = 140
+outline_size = 4
+
+[node name="HealthLabel" type="Label3D" parent="Mesh/Artwork"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.94, -4.56, 0.002)
+sorting_offset = 30.0
+shaded = true
+double_sided = false
+render_priority = 1
+outline_render_priority = 0
+modulate = Color(0.898039, 0.45098, 0.341176, 1)
+outline_modulate = Color(0.654902, 0.239216, 0.152941, 1)
+text = "体
+力"
+font = ExtResource("1_ll60y")
+font_size = 140
+outline_size = 70
+
+[node name="Holo" type="Sprite3D" parent="Mesh/Artwork"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.003)
+sorting_offset = 40.0
+material_override = ExtResource("5_hrcsv")
+cast_shadow = 0
+transparent = false
+double_sided = false
+texture = ExtResource("1_ynfjg")
+
+[node name="Frame" type="Sprite3D" parent="Mesh"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.03)
+sorting_offset = 50.0
+shaded = true
+double_sided = false
+render_priority = 1
+texture = ExtResource("1_oo6bt")
+
+[node name="Title" type="Label3D" parent="Mesh"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6.27, 0.031)
+sorting_offset = 60.0
+shaded = true
+double_sided = false
+render_priority = 1
+outline_render_priority = 0
+modulate = Color(0.0235294, 0.0313726, 0.0588235, 1)
+text = "ともだち"
+font = ExtResource("1_ll60y")
+font_size = 460
+outline_size = 0
+
+[node name="Holo" type="MeshInstance3D" parent="Mesh/Title"]
+transform = Transform3D(1.81, 0, 0, 0, 1.81, 0, 0, 0, 1, 0, 0, 0.01)
+sorting_offset = 70.0
+mesh = SubResource("TextMesh_72omw")
+
+[node name="Trails" type="GPUParticles3D" parent="."]
+visible = false
+sorting_offset = 100.0
+material_override = SubResource("StandardMaterial3D_xnq88")
+amount = 5
+trail_enabled = true
+trail_lifetime = 0.5
+process_material = SubResource("ParticleProcessMaterial_6mbnh")
+draw_pass_1 = SubResource("RibbonTrailMesh_md7le")
+
+[connection signal="input_event" from="." to="." method="OnInputEvent"]
+[connection signal="mouse_exited" from="." to="." method="OnMouseExited"]
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="OnAnimationFinished"]

@@ -1,0 +1,479 @@
+[
+  {
+    "NameEn": "A",
+    "NameJp": "あ",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/a.png",
+    "SoundPath": "res://assets/sounds/cards/na.wav"
+  },
+  {
+    "NameEn": "I",
+    "NameJp": "い",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/i.png",
+    "SoundPath": "res://assets/sounds/cards/na.wav"
+  },
+  {
+    "NameEn": "U",
+    "NameJp": "う",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/u.png",
+    "SoundPath": "res://assets/sounds/cards/na.wav"
+  },
+  {
+    "NameEn": "E",
+    "NameJp": "え",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/e.png",
+    "SoundPath": "res://assets/sounds/cards/na.wav"
+  },
+  {
+    "NameEn": "O",
+    "NameJp": "お",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/o.png",
+    "SoundPath": "res://assets/sounds/cards/na.wav"
+  },
+  {
+    "NameEn": "Ka",
+    "NameJp": "か",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/ka.png",
+    "SoundPath": "res://assets/sounds/cards/ka.wav"
+  },
+  {
+    "NameEn": "Ki",
+    "NameJp": "き",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/ki.png",
+    "SoundPath": "res://assets/sounds/cards/ki.wav"
+  },
+  {
+    "NameEn": "Ku",
+    "NameJp": "く",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/ku.png",
+    "SoundPath": "res://assets/sounds/cards/ku.wav"
+  },
+  {
+    "NameEn": "Ke",
+    "NameJp": "け",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/ke.png",
+    "SoundPath": "res://assets/sounds/cards/ke.wav"
+  },
+  {
+    "NameEn": "Ko",
+    "NameJp": "こ",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/ko.png",
+    "SoundPath": "res://assets/sounds/cards/ko.wav"
+  },
+  {
+    "NameEn": "Sa",
+    "NameJp": "さ",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/sa.png",
+    "SoundPath": "res://assets/sounds/cards/sa.wav"
+  },
+  {
+    "NameEn": "Shi",
+    "NameJp": "し",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/shi.png",
+    "SoundPath": "res://assets/sounds/cards/shi.wav"
+  },
+  {
+    "NameEn": "Su",
+    "NameJp": "す",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/su.png",
+    "SoundPath": "res://assets/sounds/cards/su.wav"
+  },
+  {
+    "NameEn": "Se",
+    "NameJp": "せ",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/se.png",
+    "SoundPath": "res://assets/sounds/cards/se.wav"
+  },
+  {
+    "NameEn": "So",
+    "NameJp": "そ",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/so.png",
+    "SoundPath": "res://assets/sounds/cards/so.wav"
+  },
+  {
+    "NameEn": "Ta",
+    "NameJp": "た",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/ta.png",
+    "SoundPath": "res://assets/sounds/cards/ta.wav"
+  },
+  {
+    "NameEn": "Da",
+    "NameJp": "だ",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/da.png",
+    "SoundPath": "res://assets/sounds/cards/da.wav"
+  },
+  {
+    "NameEn": "Chi",
+    "NameJp": "ち",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/chi.png",
+    "SoundPath": "res://assets/sounds/cards/chi.wav"
+  },
+  {
+    "NameEn": "Tsu",
+    "NameJp": "つ",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/tsu.png",
+    "SoundPath": "res://assets/sounds/cards/tsu.wav"
+  },
+  {
+    "NameEn": "Te",
+    "NameJp": "て",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/te.png",
+    "SoundPath": "res://assets/sounds/cards/te.wav"
+  },
+  {
+    "NameEn": "To",
+    "NameJp": "と",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/to.png",
+    "SoundPath": "res://assets/sounds/cards/to.wav"
+  },
+  {
+    "NameEn": "Na",
+    "NameJp": "な",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/na.png",
+    "SoundPath": "res://assets/sounds/cards/na.wav"
+  },
+  {
+    "NameEn": "Ni",
+    "NameJp": "に",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/ni.png",
+    "SoundPath": "res://assets/sounds/cards/ni.wav"
+  },
+  {
+    "NameEn": "Nu",
+    "NameJp": "ぬ",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/nu.png",
+    "SoundPath": "res://assets/sounds/cards/nu.wav"
+  },
+  {
+    "NameEn": "Ne",
+    "NameJp": "ね",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/ne.png",
+    "SoundPath": "res://assets/sounds/cards/ne.wav"
+  },
+  {
+    "NameEn": "No",
+    "NameJp": "の",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/no.png",
+    "SoundPath": "res://assets/sounds/cards/no.wav"
+  },
+  {
+    "NameEn": "Ha",
+    "NameJp": "は",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/ha.png",
+    "SoundPath": "res://assets/sounds/cards/ha.wav"
+  },
+  {
+    "NameEn": "Hi",
+    "NameJp": "ひ",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/hi.png",
+    "SoundPath": "res://assets/sounds/cards/hi.wav"
+  },
+  {
+    "NameEn": "Fu",
+    "NameJp": "ふ",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/fu.png",
+    "SoundPath": "res://assets/sounds/cards/fu.wav"
+  },
+  {
+    "NameEn": "He",
+    "NameJp": "へ",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/he.png",
+    "SoundPath": "res://assets/sounds/cards/he.wav"
+  },
+  {
+    "NameEn": "Ho",
+    "NameJp": "ほ",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/ho.png",
+    "SoundPath": "res://assets/sounds/cards/ho.wav"
+  },
+  {
+    "NameEn": "Ma",
+    "NameJp": "ま",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/ma.png",
+    "SoundPath": "res://assets/sounds/cards/ma.wav"
+  },
+  {
+    "NameEn": "Mi",
+    "NameJp": "み",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/mi.png",
+    "SoundPath": "res://assets/sounds/cards/mi.wav"
+  },
+  {
+    "NameEn": "Mu",
+    "NameJp": "む",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/mu.png",
+    "SoundPath": "res://assets/sounds/cards/mu.wav"
+  },
+  {
+    "NameEn": "Me",
+    "NameJp": "め",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/me.png",
+    "SoundPath": "res://assets/sounds/cards/me.wav"
+  },
+  {
+    "NameEn": "Mo",
+    "NameJp": "も",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/mo.png",
+    "SoundPath": "res://assets/sounds/cards/mo.wav"
+  },
+  {
+    "NameEn": "Ra",
+    "NameJp": "ら",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/ra.png",
+    "SoundPath": "res://assets/sounds/cards/ra.wav"
+  },
+  {
+    "NameEn": "Ri",
+    "NameJp": "り",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/ri.png",
+    "SoundPath": "res://assets/sounds/cards/ri.wav"
+  },
+  {
+    "NameEn": "Ru",
+    "NameJp": "る",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/ru.png",
+    "SoundPath": "res://assets/sounds/cards/ru.wav"
+  },
+  {
+    "NameEn": "Re",
+    "NameJp": "れ",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/re.png",
+    "SoundPath": "res://assets/sounds/cards/re.wav"
+  },
+  {
+    "NameEn": "Ro",
+    "NameJp": "ろ",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/ro.png",
+    "SoundPath": "res://assets/sounds/cards/ro.wav"
+  },
+  {
+    "NameEn": "Kuma",
+    "NameJp": "くま",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/kuma.png",
+    "SoundPath": "res://assets/sounds/cards/kuma.wav",
+    "AttackStat": 8,
+    "DefenseStat": 8,
+    "HealthStat": 8
+  },
+  {
+    "NameEn": "Saru",
+    "NameJp": "さる",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/saru.png",
+    "SoundPath": "res://assets/sounds/cards/saru.wav",
+    "AttackStat": 7,
+    "DefenseStat": 7,
+    "HealthStat": 7
+  },
+  {
+    "NameEn": "Shika",
+    "NameJp": "しか",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/shika.png",
+    "SoundPath": "res://assets/sounds/cards/shika.wav",
+    "AttackStat": 6,
+    "DefenseStat": 6,
+    "HealthStat": 6
+  },
+  {
+    "NameEn": "Tora",
+    "NameJp": "とら",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/tora.png",
+    "SoundPath": "res://assets/sounds/cards/tora.wav",
+    "AttackStat": 8,
+    "DefenseStat": 6,
+    "HealthStat": 6
+  },
+  {
+    "NameEn": "Nani",
+    "NameJp": "なに",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/nani.png",
+    "SoundPath": "res://assets/sounds/cards/nani.wav",
+    "AttackStat": 1,
+    "DefenseStat": 3,
+    "HealthStat": 5
+  },
+  {
+    "NameEn": "Neko",
+    "NameJp": "ねこ",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/neko.png",
+    "SoundPath": "res://assets/sounds/cards/neko.wav",
+    "AttackStat": 3,
+    "DefenseStat": 2,
+    "HealthStat": 3
+  },
+  {
+    "NameEn": "Hana",
+    "NameJp": "はな",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/hana.png",
+    "SoundPath": "res://assets/sounds/cards/hana.wav",
+    "AttackStat": 3,
+    "DefenseStat": 0,
+    "HealthStat": 1
+  },
+  {
+    "NameEn": "Haha",
+    "NameJp": "はは",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/haha.png",
+    "SoundPath": "res://assets/sounds/cards/haha.wav",
+    "AttackStat": 1,
+    "DefenseStat": 3,
+    "HealthStat": 3
+  },
+  {
+    "NameEn": "Mori",
+    "NameJp": "もり",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/mori.png",
+    "SoundPath": "res://assets/sounds/cards/mori.wav",
+    "AttackStat": 1,
+    "DefenseStat": 5,
+    "HealthStat": 5
+  },
+  {
+    "NameEn": "Kanoka",
+    "NameJp": "かのか",
+    "Rarity": 2,
+    "ArtworkPath": "res://assets/images/cards/artworks/kanoka.png",
+    "SoundPath": "res://assets/sounds/cards/kanoka.wav",
+    "AttackStat": 0,
+    "DefenseStat": 7,
+    "HealthStat": 7
+  },
+  {
+    "NameEn": "Kitsune",
+    "NameJp": "きつね",
+    "Rarity": 2,
+    "ArtworkPath": "res://assets/images/cards/artworks/kitsune.png",
+    "SoundPath": "res://assets/sounds/cards/kitsune.wav",
+    "AttackStat": 5,
+    "DefenseStat": 5,
+    "HealthStat": 10
+  },
+  {
+    "NameEn": "Kuruma",
+    "NameJp": "くるま",
+    "Rarity": 2,
+    "ArtworkPath": "res://assets/images/cards/artworks/kuruma.png",
+    "SoundPath": "res://assets/sounds/cards/kuruma.wav",
+    "AttackStat": 5,
+    "DefenseStat": 10,
+    "HealthStat": 10
+  },
+  {
+    "NameEn": "Konike",
+    "NameJp": "こにけ",
+    "Rarity": 2,
+    "ArtworkPath": "res://assets/images/cards/artworks/konike.png",
+    "SoundPath": "res://assets/sounds/cards/konike.wav",
+    "AttackStat": 5,
+    "DefenseStat": 4,
+    "HealthStat": 4
+  },
+  {
+    "NameEn": "Koneko",
+    "NameJp": "こねこ",
+    "Rarity": 2,
+    "ArtworkPath": "res://assets/images/cards/artworks/koneko.png",
+    "SoundPath": "res://assets/sounds/cards/koneko.wav",
+    "AttackStat": 6,
+    "DefenseStat": 3,
+    "HealthStat": 4
+  },
+  {
+    "NameEn": "Sakura",
+    "NameJp": "さくら",
+    "Rarity": 2,
+    "ArtworkPath": "res://assets/images/cards/artworks/sakura.png",
+    "SoundPath": "res://assets/sounds/cards/sakura.wav",
+    "AttackStat": 9,
+    "DefenseStat": 5,
+    "HealthStat": 6
+  },
+  {
+    "NameEn": "Temori",
+    "NameJp": "てもり",
+    "Rarity": 2,
+    "ArtworkPath": "res://assets/images/cards/artworks/temori.png",
+    "SoundPath": "res://assets/sounds/cards/temori.wav",
+    "AttackStat": 5,
+    "DefenseStat": 5,
+    "HealthStat": 5
+  },
+  {
+    "NameEn": "Rikishi",
+    "NameJp": "りきし",
+    "Rarity": 2,
+    "ArtworkPath": "res://assets/images/cards/artworks/rikishi.png",
+    "SoundPath": "res://assets/sounds/cards/rikishi.wav",
+    "AttackStat": 6,
+    "DefenseStat": 9,
+    "HealthStat": 9
+  },
+  {
+    "NameEn": "Karateka",
+    "NameJp": "からてか",
+    "Rarity": 3,
+    "ArtworkPath": "res://assets/images/cards/artworks/karateka.png",
+    "SoundPath": "res://assets/sounds/cards/karateka.wav",
+    "AttackStat": 9,
+    "DefenseStat": 9,
+    "HealthStat": 9
+  },
+  {
+    "NameEn": "Tomodachi",
+    "NameJp": "ともだち",
+    "Rarity": 3,
+    "ArtworkPath": "res://assets/images/cards/artworks/tomodachi.png",
+    "SoundPath": "res://assets/sounds/cards/tomodachi.wav",
+    "AttackStat": 8,
+    "DefenseStat": 8,
+    "HealthStat": 10
+  }
+]

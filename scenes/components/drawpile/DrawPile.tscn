@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://db7o1ighv32ip"]
+
+[ext_resource type="Script" path="res://scenes/components/drawpile/DrawPile.cs" id="1_jfm7e"]
+
+[node name="DrawPile" type="Node3D"]
+script = ExtResource("1_jfm7e")

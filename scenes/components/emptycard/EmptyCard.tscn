@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://cnos61ormwi0p"]
+
+[ext_resource type="ArrayMesh" uid="uid://id5q3cfqx77b" path="res://assets/meshes/card.obj" id="1_ymt0n"]
+[ext_resource type="Texture2D" uid="uid://dwyot1m4xui13" path="res://assets/images/cards/layout/card_back.png" id="2_8gsoq"]
+[ext_resource type="Script" path="res://scenes/components/emptycard/EmptyCard.cs" id="2_oi5xt"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x10w1"]
+albedo_color = Color(0, 0, 0, 1)
+
+[node name="Node3D" type="MeshInstance3D"]
+mesh = ExtResource("1_ymt0n")
+surface_material_override/0 = SubResource("StandardMaterial3D_x10w1")
+script = ExtResource("2_oi5xt")
+
+[node name="Back" type="Sprite3D" parent="."]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, -0.026)
+shaded = true
+double_sided = false
+texture = ExtResource("2_8gsoq")

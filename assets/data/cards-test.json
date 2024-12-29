@@ -1,0 +1,74 @@
+[
+  {
+    "NameEn": "Da",
+    "NameJp": "だ",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/da.png",
+    "SoundPath": "res://assets/sounds/cards/da.wav"
+  },
+  {
+    "NameEn": "Chi",
+    "NameJp": "ち",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/chi.png",
+    "SoundPath": "res://assets/sounds/cards/chi.wav"
+  },
+  {
+    "NameEn": "Te",
+    "NameJp": "て",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/te.png",
+    "SoundPath": "res://assets/sounds/cards/te.wav"
+  },
+  {
+    "NameEn": "To",
+    "NameJp": "と",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/to.png",
+    "SoundPath": "res://assets/sounds/cards/to.wav"
+  },
+  {
+    "NameEn": "Mo",
+    "NameJp": "も",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/mo.png",
+    "SoundPath": "res://assets/sounds/cards/mo.wav"
+  },
+  {
+    "NameEn": "Ri",
+    "NameJp": "り",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/ri.png",
+    "SoundPath": "res://assets/sounds/cards/ri.wav"
+  },
+  {
+    "NameEn": "Mori",
+    "NameJp": "もり",
+    "Rarity": 1,
+    "ArtworkPath": "res://assets/images/cards/artworks/mori.png",
+    "SoundPath": "res://assets/sounds/cards/mori.wav",
+    "AttackStat": 1,
+    "DefenseStat": 5,
+    "HealthStat": 5
+  },
+  {
+    "NameEn": "Temori",
+    "NameJp": "てもり",
+    "Rarity": 2,
+    "ArtworkPath": "res://assets/images/cards/artworks/temori.png",
+    "SoundPath": "res://assets/sounds/cards/temori.wav",
+    "AttackStat": 5,
+    "DefenseStat": 5,
+    "HealthStat": 5
+  },
+  {
+    "NameEn": "Tomodachi",
+    "NameJp": "ともだち",
+    "Rarity": 3,
+    "ArtworkPath": "res://assets/images/cards/artworks/tomodachi.png",
+    "SoundPath": "res://assets/sounds/cards/tomodachi.wav",
+    "AttackStat": 8,
+    "DefenseStat": 8,
+    "HealthStat": 10
+  }
+]

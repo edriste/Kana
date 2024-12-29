@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://d1lssstw1o3fg"]
+
+[ext_resource type="Script" path="res://scenes/globals/soundcontroller/SoundController.cs" id="1_g0i2m"]
+
+[node name="SoundController" type="Node"]
+process_mode = 3
+script = ExtResource("1_g0i2m")
+
+[node name="MusicPlayer" type="AudioStreamPlayer" parent="."]
+
+[node name="UISoundEffectsPlayer" type="AudioStreamPlayer" parent="."]
+
+[node name="SoundEffectsPlayer" type="AudioStreamPlayer" parent="."]
+
+[connection signal="finished" from="MusicPlayer" to="." method="OnMusicPlayerFinished"]

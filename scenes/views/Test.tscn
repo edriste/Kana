@@ -1,0 +1,101 @@
+[gd_scene load_steps=10 format=3 uid="uid://b8rdcn553gpkw"]
+
+[ext_resource type="PackedScene" uid="uid://4e4t67so6gct" path="res://scenes/components/cardFan/CardFan.tscn" id="1_ffy6l"]
+[ext_resource type="Script" path="res://scenes/views/Test.cs" id="1_i1sk5"]
+[ext_resource type="Texture2D" uid="uid://dvoma7crue1yv" path="res://assets/images/textures/wood.png" id="2_4mvxw"]
+[ext_resource type="PackedScene" uid="uid://db7o1ighv32ip" path="res://scenes/components/drawpile/DrawPile.tscn" id="3_8pklx"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qrrsu"]
+albedo_texture = ExtResource("2_4mvxw")
+
+[sub_resource type="BoxMesh" id="BoxMesh_ccbtg"]
+material = SubResource("StandardMaterial3D_qrrsu")
+size = Vector3(80, 5, 120)
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ilybu"]
+sky_top_color = Color(0.448094, 0.623805, 0.93569, 1)
+sky_horizon_color = Color(0.862563, 0.584138, 0.351146, 1)
+ground_bottom_color = Color(0.128479, 0.169162, 0.109534, 1)
+ground_horizon_color = Color(0.410652, 0.433288, 0.431513, 1)
+sun_angle_max = 64.29
+
+[sub_resource type="Sky" id="Sky_cgo1a"]
+sky_material = SubResource("ProceduralSkyMaterial_ilybu")
+
+[sub_resource type="Environment" id="Environment_ysjad"]
+background_mode = 2
+sky = SubResource("Sky_cgo1a")
+glow_intensity = 2.3
+glow_strength = 1.75
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_i1sk5")
+
+[node name="Table" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_ccbtg")
+
+[node name="Hand" parent="." instance=ExtResource("1_ffy6l")]
+transform = Transform3D(1, 0, 0, 0, 0.258819, 0.965926, 0, -0.965926, 0.258819, 0, 25, 57.5)
+
+[node name="EnemyHand" parent="." instance=ExtResource("1_ffy6l")]
+transform = Transform3D(-1, 3.69465e-08, -7.92319e-08, 0, 0.906308, 0.422618, 8.74228e-08, 0.422618, -0.906308, 0, 20, -30)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.258819, 0.965926, 0, -0.965926, 0.258819, 0, 90, 45)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+visible = false
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 50, 0)
+visible = false
+light_color = Color(0.839571, 0.486568, 1, 1)
+light_energy = 16.0
+light_indirect_energy = 16.0
+light_volumetric_fog_energy = 16.0
+spot_range = 100.0
+spot_attenuation = 0.0
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 0.999999, 0, -1, -4.37114e-08, 0, 80, 0)
+light_color = Color(0.583388, 0.410561, 0.0764837, 1)
+light_energy = 16.0
+spot_range = 100.0
+spot_attenuation = 0.0
+
+[node name="SpotLight3D3" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 80, 50)
+light_color = Color(0.583388, 0.410561, 0.0764837, 1)
+light_energy = 8.0
+spot_range = 100.0
+spot_attenuation = 0.0
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_ysjad")
+
+[node name="DrawPile" parent="." instance=ExtResource("3_8pklx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+
+[node name="Button" type="Button" parent="."]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -200.0
+offset_top = -100.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "Draw"
+
+[node name="Button2" type="Button" parent="."]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -100.0
+offset_right = 200.0
+grow_vertical = 0
+text = "FUSION"
+
+[connection signal="pressed" from="Button" to="." method="OnButtonPressed"]
+[connection signal="pressed" from="Button2" to="." method="OnFusionButtonPressed"]
